@@ -14,4 +14,4 @@ TwelveMatches -> Match: match.IsBetCorrect()
 Program -> TwelveMatches: matches.ShowCorrectCount();
 TwelveMatches -> Match: match.IsBetCorrect()
 
-@enduml
+@enduml 
