@@ -1,0 +1,8 @@
+﻿@startuml
+
+User --> (Enter bets for all matches)
+User --> (Add score for to match)
+(Enter bets for all matches) ..> (View all scores and how \nmany correct the user got): include
+(Add score for to match) ..> (View all scores and how \nmany correct the user got): include
+
+@enduml

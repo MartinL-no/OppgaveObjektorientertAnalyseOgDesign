@@ -1,0 +1,17 @@
+﻿@startuml
+
+actor User
+
+User -> Program: Enter(matchNo)
+User -> Program: Enter(team)
+
+Program -> TwelveMatches: matches.AddGoal(matchNo, isHomeTeam)
+TwelveMatches -> Match: match.AddGoal(isHomeTeam)
+
+Program -> TwelveMatches: matches.ShowAllScores()
+TwelveMatches -> Match: match.IsBetCorrect()
+
+Program -> TwelveMatches: matches.ShowCorrectCount();
+TwelveMatches -> Match: match.IsBetCorrect()
+
+@enduml

@@ -1,0 +1,15 @@
+﻿@startuml
+
+class TwelveMatches{
+}
+
+class Match {
+    homeGoals
+    awayGoals
+    bet
+    IsRunning
+}
+
+TwelveMatches -* Match
+
+@enduml
